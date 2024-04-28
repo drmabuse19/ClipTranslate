@@ -1,78 +1,39 @@
 
-# Project Title
+# Clipboard Translator
 
-One Paragraph of project description goes here. It can be a brief introduction to the technology stack, main features, and the goals of the project.
+This Python application continuously monitors your system's clipboard for new text entries. If the text copied to the clipboard is not a URL, the application translates the text to English using the Google Translate API and displays the translated text in a simple GUI. This tool is particularly useful for users who frequently work with foreign language texts.
 
-## Getting Started
+## Prerequisites
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Before you run this application, you need the following installed on your system:
+- Python 3.x
+- Tkinter (usually comes with Python)
+- `pyperclip` and `googletrans` Python libraries
 
-### Prerequisites
-
-What things you need to install the software and how to install them:
-
-```bash
-Give examples
-```
-
-### Installing
-
-A step-by-step series of examples that tell you how to get a development environment running:
-
-Say what the step will be:
+You can install the required Python libraries using pip:
 
 ```bash
-Give the example
+pip install pyperclip googletrans==4.0.0-rc1
 ```
 
-And repeat:
+## Installation
 
-```bash
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
+Download the `Clipboard_Translator.py` file to your local machine.
 
 ## Usage
 
-Explain how to use your project. Include code blocks and screenshots if necessary. This section can also include recent updates or features you have added.
-
-## Running the tests
-
-Explain how to run the automated tests for this system. Break down into end-to-end tests and other types as needed:
+To start the application, run the Python script from your command line:
 
 ```bash
-Give an example
+python Clipboard_Translator.py
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system.
+The application will open a window displaying any translated text from your clipboard that is not a URL. It will update this text whenever new text is copied to the clipboard.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/yourusername/yourproject/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/yourusername/yourproject/tags).
-
-## Authors
-
-* **Your Name** - *Initial work* - [YourUsername](https://github.com/YourUsername)
-
-See also the list of [contributors](https://github.com/yourusername/yourproject/contributors) who participated in this project.
+Contributions to this project are welcome! Please fork the repository and submit a pull request with your improvements.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-## Contact
-
-For any inquiries, please reach out to email@example.com
+This project is open-sourced under the MIT License. See the LICENSE file for more details.
